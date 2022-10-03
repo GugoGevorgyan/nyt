@@ -22,4 +22,3 @@ storage/logs
 common
 yarn-error.log
 .git2
-src
