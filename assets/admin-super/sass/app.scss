@@ -1,0 +1,107 @@
+/** @format */
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
+// Vuetify
+@import '~vuetify/dist/vuetify.css';
+
+// Material design Icons
+@import '~@mdi/font/css/materialdesignicons.css';
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset;
+    transition: backgrounded-color 5000s ease-in-out 0s;
+}
+button:focus {
+    outline: 0;
+}
+
+#app {
+    background-color: #ebebeb;
+    outline: 1px solid slategrey;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: #b9b9ba;
+    height: 3px;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.b-scroll::-webkit-scrollbar {
+    width: 0.55em;
+}
+.b-scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.b-scroll::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+.pointer {
+    cursor: pointer;
+}
+
+.v-dialog {
+    border-radius: 2px;
+}
+
+.osxbutton {
+    text-decoration: none;
+    font-family: '.LucidaGrandeUI', 'Lucida Grande', 'Lucida sans unicode';
+    color: black;
+    font-size: 11px;
+    border: 1px solid #9c9c9c;
+    background-image: -webkit-linear-gradient(#ffffff 0%, #f6f6f6 30%, #f3f3f3 45%, #ededed 60%, #eeeeee 100%);
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+}
+.border {
+    border-radius: 8px !important;
+}
+
+.border-lg {
+    border-radius: 8px !important;
+}
+
+.rounded-1 {
+    border-radius: 1px !important;
+}
+.rounded-2 {
+    border-radius: 2px !important;
+}
+.rounded-3 {
+    border-radius: 3px !important;
+}

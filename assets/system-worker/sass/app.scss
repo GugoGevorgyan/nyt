@@ -1,0 +1,87 @@
+/** @format */
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+    font-family: inherit;
+}
+#app {
+    font-family: "Roboto", sans-serif;
+}
+
+// Vuetify
+@import "~vuetify/dist/vuetify.css";
+@import "~@mdi/font/css/materialdesignicons.css"; // Ensure you are using css-loader
+
+// Material design Icons
+@import "variables";
+@import "style";
+
+@import "~element-ui/lib/theme-chalk/date-picker.css";
+@import "~element-ui/lib/theme-chalk/icon.css";
+.v-el-date-picker {
+    width: 100% !important;
+    height: 56px !important;
+    padding: 0 12px;
+    background: transparent !important;
+    min-height: 56px;
+    cursor: text;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    color: rgba(0, 0, 0, 0.87);
+    line-height: 1.5;
+    border-color: rgba(0, 0, 0, 0.24);
+    &:hover {
+        border-color: rgba(0, 0, 0, 0.86);
+    }
+    &:focus {
+        border-color: #f9a825 !important;
+        caret-color: #f9a825 !important;
+        border-width: 2px;
+    }
+    &:focus .el-input.is-active .el-input__inner,
+    .el-input__inner {
+        border-color: #f9a825 !important;
+        caret-color: #f9a825 !important;
+    }
+}
+.el-range-editor.is-active,
+.el-range-editor.is-active:hover {
+    border-color: #f9a825 !important;
+    border-width: 2px;
+}
+.el-date-editor .el-range-input::placeholder {
+    height: 20px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 16px;
+    min-height: 8px;
+}
+.el-date-editor .el-range-input::-webkit-input-placeholder {
+    height: 20px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 16px;
+    min-height: 8px;
+}
+.el-date-editor .el-range-separator {
+    padding: 0 5px !important;
+    width: 5% !important;
+    color: #303133 !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 46px !important;
+}
+.el-date-editor .el-range-input {
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.el-picker-panel {
+    font-size: 14px;
+}
+.el-date-table {
+    font-size: 14px;
+}
+//html {
+//    overflow: hidden;
+//}

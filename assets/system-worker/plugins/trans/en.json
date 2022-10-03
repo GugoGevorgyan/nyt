@@ -1,0 +1,10 @@
+{
+    "app": {
+        "msg": {
+            "driver_type_tenant": "Tenant",
+            "driver_type_aggregator": "Aggregator",
+            "driver_type_roll": "Roll",
+            "driver_type_corporate": "Corporate"
+        }
+    }
+}

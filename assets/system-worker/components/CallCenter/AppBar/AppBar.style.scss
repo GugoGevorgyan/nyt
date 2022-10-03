@@ -1,0 +1,24 @@
+/** @format */
+
+.dialog-btn {
+    background: white;
+    transition: 0.1s;
+}
+.dialog-btn-deactivated {
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: #344955 !important;
+    color: #e5e5e5;
+}
+.dialog-btn-active {
+    color: #f9a825;
+    border-bottom: 1px solid #f9a825;
+    border-left: 1px solid #f9a825;
+    border-right: 1px solid #f9a825;
+    border-radius: 0 0 5px 5px;
+    margin-top: -10px;
+    background-color: #344955 !important;
+}
+.v-toolbar__content {
+    border-bottom: none !important;
+}

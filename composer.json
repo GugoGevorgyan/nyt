@@ -1,0 +1,197 @@
+{
+  "name": "vendor-name/new-yellow-taxi",
+  "type": "project",
+  "description": "taxi system for corporate and aggregator drivers",
+  "keywords": [
+    "nyt",
+    "new yellow taxi",
+    "newyellowtaxi",
+    "yellow taxi",
+    "taxi",
+    "taxi system"
+  ],
+  "license": "proprietary",
+  "require": {
+    "php": "^8.0.2",
+    "ext-pdo": "*",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "ext-zlib": "*",
+    "ext-redis": "*",
+    "ext-pcntl": "*",
+    "ext-swoole": "*",
+    "ext-bcmath": "*",
+    "ext-imagick": "*",
+    "ext-openssl": "*",
+    "ext-sockets": "*",
+    "ext-igbinary": "*",
+    "ext-mbstring": "*",
+    "ext-calendar": "*",
+    "ext-zend-opcache": "*",
+    "laravel/ui": "^3.0.0",
+    "spatie/async": "^1.0.0",
+    "laravel/scout": "^9.0.0",
+    "nesbot/carbon": "^2.0.0",
+    "geoip2/geoip2": "^2.0.0",
+    "doctrine/dbal": "^3.0.0",
+    "laravel/tinker": "^2.0.0",
+    "pda/pheanstalk": "^4.0.0",
+    "fakerphp/faker": "^1.10.0",
+    "laravel/helpers": "^1.0.0",
+    "league/geotools": "^1.0.0",
+    "fideloper/proxy": "^4.0.0",
+    "laravel/passport": "^10.0.0",
+    "guzzlehttp/guzzle": "^7.0.0",
+    "laravel/framework": "^8.0.0",
+    "artesaos/seotools": "^0.22.0",
+    "symfony/dom-crawler": "^6.0.0",
+    "ayesh/composer-preload": "^0.1.0",
+    "fruitcake/laravel-cors": "^2.0.0",
+    "barryvdh/laravel-dompdf": "^0.9.0",
+    "phpoffice/phpspreadsheet": "^1.20.0",
+    "spatie/laravel-db-snapshots": "^2.0.0",
+    "elasticsearch/elasticsearch": "^7.0.0",
+    "spatie/laravel-responsecache": "^7.0.0",
+    "mobiledetect/mobiledetectlib": "^2.8.0",
+    "beyondcode/laravel-websockets": "^1.0.0",
+    "staudenmeir/belongs-to-through": "^2.11.2",
+    "renatomarinho/laravel-page-speed": "^2.0.0",
+    "laravel-notification-channels/fcm": "^2.0.0",
+    "staudenmeir/eloquent-has-many-deep": "^1.14.4",
+    "staudenmeir/eloquent-json-relations": "^1.5.4"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "filp/whoops": "^2.0.0",
+    "phpmd/phpmd": "^2.0.0",
+    "vimeo/psalm": "^4.0.0",
+    "laravel/dusk": "^6.0.0",
+    "predis/predis": "^1.0.0",
+    "laravel/horizon": "^5.0.0",
+    "pdepend/pdepend": "^2.0.0",
+    "mockery/mockery": "^1.5.0",
+    "phpstan/phpstan": "^1.0.0",
+    "phpunit/phpunit": "^9.0.0",
+    "facade/ignition": "^2.0.0",
+    "sebastian/phpcpd": "^6.0.0",
+    "orangehill/iseed": "^3.0.1",
+    "phpunit/php-timer": "^5.0.0",
+    "laravel/telescope": "^4.0.0",
+    "psalm/plugin-laravel": "^1.5.0",
+    "nunomaduro/collision": "^5.0.0",
+    "darkaonline/l5-swagger": "^8.0.0",
+    "squizlabs/php_codesniffer": "^3.0.0",
+    "barryvdh/laravel-debugbar": "^3.0.0",
+    "friendsofphp/php-cs-fixer": "^2.16.0",
+    "barryvdh/laravel-ide-helper": "^2.0.0",
+    "laravelcollective/annotations": "^8.0",
+    "dionera/laravel-beanstalkd-ui": "^4.0.0",
+    "pheromone/phpcs-security-audit": "^2.0.0",
+    "beyondcode/laravel-dump-server": "^1.0.0",
+    "beyondcode/laravel-query-detector": "^1.0.0"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true,
+      "ayesh/composer-preload": true
+    }
+  },
+  "extra": {
+    "laravel": {
+      "dont-discover": [
+        "helpers/.phpstorm.meta.php",
+        "helpers/_ide_helper.php",
+        "helpers/_ide_helper_models.php",
+        "helpers/_ide_helper_macro_static.php",
+        "helpers/_ide_helper_macro.php",
+        "helpers/__ide_helper_facades.php"
+      ],
+      "providers": [
+        "ServiceEntity\\Providers\\BaseServiceProvider",
+        "Repository\\Providers\\RepositoryServiceProvider"
+      ]
+    },
+    "preload": {
+      "paths": [
+        "vendor/laravel",
+        "vendor/symfony",
+        "vendor/league",
+        "vendor/staudenmeir/belongs-to-through",
+        "vendor/staudenmeir/eloquent-has-many-deep",
+        "vendor/staudenmeir/eloquent-json-relations/src/Casts",
+        "vendor/staudenmeir/eloquent-json-relations/src/Grammars",
+        "vendor/staudenmeir/eloquent-json-relations/src/Relations",
+        "vendor/beyondcode",
+        "vendor/react",
+        "vendor/cboden",
+        "vendor/pda",
+        "repository/Contracts",
+        "repository/Criteries",
+        "repository/Listeners",
+        "repository/Providers",
+        "repository/Traits",
+        "service",
+        "app",
+        "src"
+      ],
+      "exclude": [
+        "tests",
+        "src/Core/Traits/Complex.php"
+      ],
+      "extensions": [
+        "php",
+        "module",
+        "inc",
+        "install"
+      ],
+      "exclude-regex": "/[A-Za-z0-9_]test\\.php$/i",
+      "no-status-check": false,
+      "files": [
+        "vendor/staudenmeir/eloquent-json-relations/src/HasJsonRelationships"
+      ]
+    }
+  },
+  "autoload": {
+    "files": [
+      "src/Core/_helpers.php"
+    ],
+    "psr-4": {
+      "Repository\\": "repository/",
+      "ServiceEntity\\": "service/",
+      "App\\": "app/",
+      "Src\\": "src/"
+    },
+    "classmap": [
+      "database/seeders",
+      "database/factories"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/",
+      "Repository\\Tests\\": "repository/tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover --ansi",
+      "@php artisan config:clear",
+      "@php artisan event:clear",
+      "@php artisan view:clear",
+      "@php artisan route:clear",
+      "@php artisan cache:clear"
+    ],
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@php artisan key:generate --ansi --force"
+    ]
+  }
+}

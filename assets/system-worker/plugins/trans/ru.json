@@ -1,0 +1,10 @@
+{
+    "app": {
+        "msg": {
+            "driver_type_tenant": "Арендатор",
+            "driver_type_aggregator": "Агрегатор",
+            "driver_type_roll": "Раскат",
+            "driver_type_corporate": "Корпоративный"
+        }
+    }
+}

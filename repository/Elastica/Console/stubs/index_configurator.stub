@@ -1,0 +1,18 @@
+<?php
+
+namespace DummyNamespace;
+
+use Repository\Elastica\IndexConfigurator;
+use Repository\Traits\Migratable;
+
+class DummyClass extends IndexConfigurator
+{
+    use Migratable;
+
+    /**
+     * @var array
+     */
+    protected $settings = [
+        //
+    ];
+}

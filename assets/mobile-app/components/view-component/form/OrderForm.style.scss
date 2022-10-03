@@ -1,0 +1,26 @@
+/** @format */
+
+.v-application a {
+    color: #1976d200 !important;
+}
+.mobile-form {
+    background-color: #ffffffff !important;
+    position: relative;
+    z-index: 99;
+}
+.mobile-input {
+    border-radius: 0 !important;
+}
+.mobile-input-height {
+    height: 58px !important;
+}
+.from-mobile-input-height {
+    height: 50px !important;
+}
+.btn-hover.color-2 {
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+.order-rent-toggle-btn:focus::before,
+.order-rent-toggle-btn:hover::before {
+    opacity: 0 !important;
+}
